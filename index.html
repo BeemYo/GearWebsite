@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>BeemGear</title>
+    
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="inspector">
+            <p id="title">Gear 1</p>
+            <div>
+                <p class="indicator">Teeth</p>
+                <input type="number" id="teeth" placeholder="Teeth"/>
+                <button onClick="getTee();" id="teeButton">Calculate</button>
+            </div>
+            <div>
+                <p class="indicator">Module</p>
+                <input type="number" id="module" placeholder="Module"/>
+                <button onClick="getMod();" id="modButton">Calculate</button>
+            </div>
+            <div>
+                <p class="indicator">Pitch Circle</p>
+                <input type="number" id="pcd" placeholder="Pitch Circle"/>
+                <button onClick="getPcd();" id="pcdButton">Calculate</button>
+            </div>
+            <div>
+                <p class="indicator">Rpm</p>
+                <input type="number" id="rpm" placeholder="RPM"/>
+            </div>
+            <div class="buttons">
+                <button onClick="lower()"><i class="arrow down"></i></button>
+                <button onClick="higher()"><i class="arrow up"></i></button>
+            </div>
+            <div>
+                <button onClick="newGear()">New Gear</button>
+            </div>
+        </div>
+        <div class="field">
+            <canvas id="canvas" width="70vw" height="99.6wh"></canvas>
+        </div>
+        <script src="canvas.js"></script>
+    </div>
+</body>
+</html>

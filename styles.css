@@ -1,0 +1,90 @@
+body{
+    margin:0px;
+    font-family: helvetica;
+    background: #8aac95;
+    height: 100%;
+}
+button, input{
+    background-color: #000a24;
+    color: white;
+    border: solid;
+    border-width: 3px;
+    border-color: #0ab34d;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    border-radius:20px;
+    font-size: 20px;
+    outline: none;
+    -moz-appearance:textfield;
+}
+button:hover{
+    background-color: #0ab34d;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+canvas {
+    margin: 0;
+    padding: 0;
+    
+}
+#title{
+    font-size:50px;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 100px;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.buttons > button{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.indicator{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    
+}
+.inspector > div{
+    text-align: center;
+    margin-bottom:40px;
+}
+.inspector{
+    padding: 4vh;
+    margin: 0px;
+    
+    background: #2656BD;
+    border-radius:0 40px 40px 0;
+    align-content: center;
+    height:92vh;
+
+}
+.field{
+    padding: 0px;
+    margin: 0px;
+    background: #8aac95;
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    
+}
